@@ -1,0 +1,38 @@
+* {
+	margin:0;
+}
+li {
+	list-style:none;
+}
+.list {
+	width:1200px;
+	margin:100px auto;
+}
+.list li {
+	float:left;
+	width:240px;
+	height:240px;
+	position:relative;
+	overflow:hidden;
+}
+.list li img {
+	width:100%;
+	height:100%;
+	display:block;
+	transition:all 1s;
+}
+.list li .mask {
+	background:rgba(255,255,255,0.6);
+	position:absolute;
+	left:-1000px;
+	top:-1000px;
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+	padding:0 30px;
+	padding-top:30px;
+	color:#003eff;
+}
+.list li:hover img {
+	transform:scale(1.5);
+}

@@ -1,0 +1,64 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+ul li {
+	list-style:none
+}
+#slide {
+	margin:0px auto;
+	position:relative;
+}
+.slide_img li {
+	position:absolute;
+	display:none;
+	top:0px;
+	left:0px
+}
+.dotted {
+	width:100%;
+	position:absolute;
+	bottom:10px;
+	left:0px;
+	font-size:0px;
+	text-align:center;
+}
+.dotted li {
+	width:16px;
+	height:16px;
+	background:rgba(255,255,255,0.5);
+	font-size:14px;
+	line-height:16px;
+	text-align:center;
+	display:inline-block;
+	margin:0px 5px;
+	cursor:pointer;
+	border-radius:50%;
+}
+.dotted li span {
+	display:inline-block;
+	width:8px;
+	height:8px;
+	margin-top:4px;
+	background:rgba(255,255,255,0.8);
+	border-radius:50%;
+}
+.dotted .active {
+	background:rgba(255,255,255,0.8);
+}
+.left,.right {
+	height:50px;
+	width:30px;
+	background:rgba(255,255,255,0.5);
+	position:absolute;
+	top:0px;
+	display:none;
+	cursor:pointer;
+	text-align:center;
+	line-height:50px;
+	font-family:"宋体";
+	font-weight:bold;
+}
+.right {
+	right:0px;
+}

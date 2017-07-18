@@ -1,0 +1,200 @@
+* {
+	color:#5D5D5D;
+	font-size:18px;
+	line-height:30px;
+	font-family:"Microsoft Yahei";
+}
+header,section,footer {
+	width:100%;
+	overflow:hidden;
+}
+body {
+	margin:0 auto;
+}
+ul,li,ol,dl,dd {
+	list-style-type:none;
+	margin:0;
+}
+p {
+	margin:0 auto;
+	padding:0;
+}
+a {
+	text-decoration:none
+}
+a,img {
+	border:0;
+}
+.cstype-wp {
+	margin:20px auto;
+	width:1020px;
+	overflow:hidden;
+}
+.cstype-wp>div {
+	float:left;
+	margin-right:24px;
+	line-height:60px;
+	color:#fff;
+	position:relative;
+	width:180px;
+	height:60px;
+	overflow:hidden
+}
+.cstype-wp>div>a {
+	display:block;
+	width:180px;
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	left:0;
+	-webkit-transition:top .4s 0s ease-out;
+	transition:top .4s 0s ease-out
+}
+.cstype-wp>div:hover>a {
+	top:-60px
+}
+.cstype-wp .cstype-a,.cstype-wp .cstype-b,.cstype-wp .cstype-c,.cstype-wp .cstype-d,.cstype-wp .cstype-e,.cstype-wp .cstype-e {
+	background-image:url("kc_ioc.png")!important
+}
+.cstype-wp .cstype-a em,.cstype-wp .cstype-b em,.cstype-wp .cstype-c em,.cstype-wp .cstype-d em,.cstype-wp .cstype-e em,.cstype-wp .cstype-f em {
+	width:180px;
+	height:60px;
+	line-height:60px;
+	line-height:60px;
+	background-image:url("kc_ioc.png")!important;
+	font-style:normal;
+}
+.cstype-wp .cstype-a span,.cstype-wp .cstype-b span,.cstype-wp .cstype-c span,.cstype-wp .cstype-d span,.cstype-wp .cstype-e span,.cstype-wp .cstype-f span {
+	width:178px;
+	height:58px;
+	line-height:58px;
+	background-image:url("kc_ioc.png")!important
+}
+.cstype-wp .cstype-a {
+	text-indent:75px
+}
+.cstype-wp .cstype-a em {
+	background:0 -532px no-repeat #9cc400;
+	display:block;
+	color:#fff
+}
+.cstype-wp .cstype-a span {
+	background:0 -180px no-repeat #9cc400;
+	display:block;
+	background-color:#fff;
+	border:1px solid #9cc400;
+	color:#9cc400
+}
+.cstype-wp .cstype-a em {
+	background-position:0px -532px;
+}
+.cstype-wp .cstype-a span {
+	background-position:10px -180px
+}
+.cstype-wp .cstype-b {
+	text-indent:75px;
+}
+.cstype-wp .cstype-b em {
+	background:0 -652px no-repeat #00cdff;
+	display:block;
+	color:#fff
+}
+.cstype-wp .cstype-b span {
+	background:0 -300px no-repeat #00cdff;
+	display:block;
+	background-color:#fff;
+	border:1px solid #00cdff;
+	color:#00cdff
+}
+.cstype-wp .cstype-b em {
+	background-position:-3px -652px
+}
+.cstype-wp .cstype-b span {
+	background-position:-3px -300px
+}
+.cstype-wp .cstype-c {
+	text-indent:75px
+}
+.cstype-wp .cstype-c em {
+	background:0 -412px no-repeat #fc536f;
+	display:block;
+	color:#fff
+}
+.cstype-wp .cstype-c span {
+	background:0 -60px no-repeat #fc536f;
+	display:block;
+	background-color:#fff;
+	border:1px solid #fc536f;
+	color:#fc536f
+}
+.cstype-wp .cstype-c em {
+	background-position:10px -412px
+}
+.cstype-wp .cstype-c span {
+	background-position:10px -60px
+}
+.cstype-wp .cstype-d {
+	text-indent:75px
+}
+.cstype-wp .cstype-d em {
+	line-height:60px;
+	background:0 -352px no-repeat #cf68ed;
+	display:block;
+	color:#fff
+}
+.cstype-wp .cstype-d span {
+	line-height:58px;
+	background:no-repeat #cf68ed;
+	display:block;
+	background-color:#fff;
+	border:1px solid #cf68ed;
+	color:#cf68ed
+}
+.cstype-wp .cstype-d em {
+	background-position:-3px -350px
+}
+.cstype-wp .cstype-d span {
+	background-position:-3px 0px
+}
+.cstype-wp .cstype-e {
+	text-indent:75px
+}
+.cstype-wp .cstype-e em {
+	background:0 -472px no-repeat #e9a600;
+	display:block;
+	color:#fff
+}
+.cstype-wp .cstype-e span {
+	background:0 -120px no-repeat #e9a600;
+	display:block;
+	background-color:#fff;
+	border:1px solid #e9a600;
+	color:#e9a600
+}
+.cstype-wp .cstype-e em {
+	background-position:-8px -472px
+}
+.cstype-wp .cstype-e span {
+	background-position:-8px -120px
+}
+.cstype-wp .cstype-f {
+	text-indent:75px
+}
+.cstype-wp .cstype-f em {
+	background:0 -592px no-repeat #49d77d;
+	display:block;
+	color:#fff
+}
+.cstype-wp .cstype-f span {
+	background:0 -240px no-repeat #49d77d;
+	display:block;
+	background-color:#fff;
+	border:1px solid #49d77d;
+	color:#49d77d
+}
+.cstype-wp .cstype-f em {
+	background-position:0 -589px
+}
+.cstype-wp .cstype-f span {
+	background-position:0 -236px
+}

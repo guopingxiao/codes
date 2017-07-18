@@ -1,0 +1,65 @@
+#content>.content_right{
+    width: 310px;
+    height: 340px;
+    background: #324E73;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 4%;
+}
+#content>.content_right>.username{
+    width: 175px;
+    height: 38px;
+    margin-top: 22px;
+    margin-left: 92px;
+}
+.input_box{
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    color: #777;
+}
+#content>.content_right>.password{
+    width: 175px;
+    height: 38px;
+    margin-left: 92px;
+    margin-top: 21px;
+}
+#content>.content_right>.login_btn{
+    margin-top: 20px;
+    margin-left: 34px;
+    cursor: pointer;
+    font-size:20px;
+    color:#fff;
+    text-align:center;
+    width:235px;
+    height:40px;
+    line-height:40px;
+    background:#EE9436;
+}
+#content>.content_right>.form-message{
+    width: 233px;
+    margin-top: 15px;
+    margin-left: 34px;
+    text-align: center;
+    font-size: 12px;
+}
+#content>.content_right>.form-message>div{
+    height: 25px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+#content>.content_right>.form-message>.form-warning-text{
+    border:1px solid #f8e144;
+    color: #000;
+    background:#fdf7ce;
+}
+#content>.content_right>.form-message>.form-error-text{
+    border:1px solid #ee86a4;
+    color: #9d2a16;
+    background:#f8cad7;
+}
+#content>.content_right>.form-message>.form-succeed-text{
+    color: #fff;
+    border: 1px solid #227fa0;
+    background:#025f80;
+}

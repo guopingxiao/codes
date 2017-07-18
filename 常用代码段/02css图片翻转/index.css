@@ -1,0 +1,32 @@
+    .rating-box {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .rating {
+        direction: rtl; /* 把文本方向设置为“从右向左”： */
+    }
+
+    .rating>span {
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 700;
+        position: relative;
+        transition: all .2s;
+    }
+
+    .rating>span:hover:before,
+    .rating>span:hover~span:before {
+        content: "\2605";
+        color: red;
+        position: absolute;
+    }
+
+    .rating>span.active:before {
+        content: "\2605";
+        color: red;
+        position: absolute;
+    }
+
+    /* 该例子主要运用了css “element1~element2 选择器”的特性，但是这样和我们想要的结果是相反的，
+    于是用另一个css属性direction，吧放好的星星从右至左，这样巧妙的实现我们想要的。 */
