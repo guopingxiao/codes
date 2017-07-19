@@ -1,0 +1,45 @@
+*{margin:0;padding:0;list-style-type:none;}/*清楚内外默认边距*/
+body{background:#333;}
+.web{width:985px;height:620px;margin:0px auto;}
+.con{width:950px;height:435px;background:#fff;margin:27px auto;padding-left:25px;padding-top:25px;}
+.con ul li{width:297px;height:198px;float:left;margin-right:15px;margin-bottom:15px;position:relative;overflow:hidden;cursor:pointer; background:#eee;}
+.txt{
+	width:297px;
+	height:0px;
+	background:rgba(0,0,0,0.6);/*透明背景色，不透明其文字内容*/
+	position:absolute;
+	left:0;
+	bottom:0px;
+	color:#fff;
+	font-family:"微软雅黑";
+	transition: height 0.3s ease;
+	-moz-transition: height 0.3s ease; /* Firefox 4 */
+	-webkit-transition: height 0.3s ease; /* Safari 和 Chrome */
+	-o-transition: height 0.3s ease; /* Opera */
+}
+.txt h3{font-size:20px;font-weight:100;height:45px;text-align:center;line-height:45px; margin-top:10px;}
+.txt p{font-size:14px;text-align:center; width:90%; margin:0 auto; height:30px;}
+.current .txt{
+
+	height:120px;
+}
+
+.btn{
+	position:absolute;
+	width:200px;
+	height:150px;
+	left:50%;
+	top:50%;
+	margin:-75px 0 0 -100px;
+	text-align:center;
+	color:#fff;
+	line-height:30px;
+	box-shadow: 0 10px 10px #dcdcdc;
+}
+.btn img{
+	display:block;
+	width:100%;
+	height:100%;
+	border:1px solid #dddddd;
+	border-radius:6px;
+}

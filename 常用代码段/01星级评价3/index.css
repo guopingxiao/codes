@@ -1,0 +1,16 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+ul{
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}			
+li {
+	width: 24px;
+	height: 19px;
+	background: url(http://www.jq22.com/tp/994a70b4-b01b-45df-bd9a-9f7f03c20dc7.png) no-repeat 0 0px;
+	float: left;
+	list-style: none;
+}
