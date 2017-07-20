@@ -1,0 +1,21 @@
+.shop-total,.all-total {
+	height:50px;
+	line-height:50px;
+	font-weight:bold;
+	color:#f00;
+	float:left;
+}
+.one-shop,.all-total,.shop-total {
+	width:400px;
+}
+p {
+	margin:0;
+}
+.goods-check {
+	width:25px;
+	height:25px;
+	margin-top:5px;
+}
+.goods-msg,p,label {
+	float:left;
+}

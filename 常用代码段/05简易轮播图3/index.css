@@ -1,0 +1,38 @@
+ * {
+	margin:0;
+	padding:0;
+}
+img {
+	vertical-align:top;
+	width:500px;
+	height:300px;
+}
+ul {
+	list-style:none;
+}
+#banner {
+	width:500px;
+	height:300px;
+	margin:10px auto;
+	position:relative;
+}
+#btn {
+	position:absolute;
+	bottom:10px;
+	left:180px;
+}
+#btn li {
+	float:left;
+	margin-left:18px;
+	background:#a09c9c;
+	width:20px;
+	height:20px;
+	text-align:center;
+	line-height:20px;
+}
+#banner_list li {
+	display:none;
+}
+#btn .sel {
+	background-color:orange;
+}

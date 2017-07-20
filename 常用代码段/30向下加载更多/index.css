@@ -1,0 +1,24 @@
+ body {
+	background-color:#fff;
+}
+#main {
+	margin:0 auto;
+	width:500px;
+}
+#content {
+	position:absolute;
+	width:500px;
+}
+#img {
+	margin:0;
+	padding:0;
+}
+#img li {
+	list-style-type:none;
+	background-color:salmon;
+	margin:0;
+	margin-top:10px;
+	border-bottom:solid 1px hotpink;
+	text-align:center;
+	height:30px;
+}
