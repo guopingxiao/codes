@@ -1,0 +1,40 @@
+http://responsiveweb.t.imooc.io
+
+
+css 可以用calc来计算一些值
+css : inline-block 4px 的换行符间距
+ 父元素 font-size:0 ;去除换行符的字体大小
+
+不换行
+
+首个不要样式
+
+item + li {
+紧跟屁股后面的元素，这样就不需要使用first-child 了
+}
+
+媒体查询默认使用的是使用 1rem = 16px
+
+
+可以统一font size = 10/16 = 62.5% 可以将1rem  = 10 px  但是浏览器默认设置的最小是12px  ,就会有一点点的转化转化差异   
+
+
+响应式布局，不单单是不同不同尺寸下网页的布局，还有不同分辨率下图片加载不同的图片，比如小屏幕下加载小图片。
+
+不同分辨率下的响应式图片大小；
+
+
+根据网页的大小来设置不同大小的图片
+1.通过js来实现，通过页面加载时来判断浏览器的屏幕的大小；改变src
+2.通过srcset 来使浏览器解析不同大小的图片；
+3.通过size尺寸来hack  srcset  vw vh
+4.通过picture 的source来决定取那一张图,兼容性差，但是有picturefill
+5.webp图片可以压缩到jpg的2/3
+6.使用svg矢量图保持不失真（不能是色彩丰富的图片，简单的图标和logo）
+
+浏览器通用的解决方案，browhacks.com 搜索即可
+
+视觉sketcH
+
+交互工具flinto for mac
+
