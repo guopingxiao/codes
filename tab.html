@@ -1,0 +1,166 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>常用的tab选项卡-jq22.com</title>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<style>
+* {
+	margin:0;
+	padding:0
+}
+ul {
+	list-style:none
+}
+a {
+	text-decoration:none
+}
+.hide {
+	display:none;
+}
+.wrap {
+	width:500px;
+	margin:50px
+}
+.tab {
+	margin-bottom:30px;
+}
+.tab .tabList {
+	height:40px;
+}
+.tab .tabList li {
+	float:left;
+}
+.tab .tabList li a {
+	display:block;
+	height:40px;
+	line-height:40px;
+	padding:0 20px
+}
+.tab .tabList .ac a {
+	background:#ccc;
+	color:#fff
+}
+.tab .tabItem {
+	min-height:200px;
+	border:1px solid #ccc;
+	padding:20px
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+    <div id="tab1" class="tab">
+        <ul class="tabList">
+            <li class="ac"><a href="javascript:;">itemA</a></li>
+            <li><a href="javascript:;">itemB</a></li>
+            <li><a href="javascript:;">itemC</a></li>
+            <li><a href="javascript:;">itemD</a></li>
+        </ul>
+        <div class="tabCont">
+            <div class="tabItem">1111</div>
+            <div class="tabItem hide">2222</div>
+            <div class="tabItem hide">3333</div>
+            <div class="tabItem hide">4444</div>
+        </div>
+    </div>
+    <div id="tab2" class="tab">
+        <ul class="tabList">
+            <li class="ac"><a href="javascript:;">itemA</a></li>
+            <li><a href="javascript:;">itemB</a></li>
+            <li><a href="javascript:;">itemC</a></li>
+            <li><a href="javascript:;">itemD</a></li>
+        </ul>
+        <div class="tabCont">
+            <div class="tabItem">1111</div>
+            <div class="tabItem hide">2222</div>
+            <div class="tabItem hide">3333</div>
+            <div class="tabItem hide">4444</div>
+        </div>
+    </div>
+</div><script>
+window.onload = function() {
+    //传统方式
+    /*function tab(obj){
+	
+	
+    };*/
+
+    function Tab(obj) {
+        this.oUl = obj.children[0];
+        this.aLi = this.oUl.children;
+        this.tabItem = obj.getElementsByClassName('tabItem');
+        /*//构造函数内直接调用原型上的方法
+        this.init();*/
+        this.timer;
+        this.n = 0;
+    };
+
+    //原型上增加切换功能
+    Tab.prototype.init = function() {
+        var _this = this;
+        for (var i = 0; i < this.aLi.length; i++) {
+            this.aLi[i].index = i;
+
+            this.aLi[i].onclick = function() {
+
+                for (var j = 0; j < _this.aLi.length; j++) {
+                    _this.aLi[j].className = "";
+                    _this.tabItem[j].style.display = "none";
+                };
+                this.className = "ac";
+                _this.n = this.index;
+                _this.tabItem[this.index].style.display = "block";
+            };
+        };
+
+        return this;
+    };
+
+    //------------------------------------------
+    //自动运行功能
+    Tab.prototype.autoPlay = function() {
+        var oParent = this.oUl.parentNode;
+        var _this = this;
+
+        function run(num) {
+            for (var j = 0; j < _this.aLi.length; j++) {
+                _this.aLi[j].className = "";
+                _this.tabItem[j].style.display = "none";
+            };
+            _this.aLi[num].className = "ac";
+            _this.tabItem[num].style.display = "block";
+        };
+
+        this.timer = setInterval(function() {
+            _this.n == _this.aLi.length - 1 ? _this.n = 0 : _this.n++;
+            run(_this.n);
+        }, 2000);
+
+        oParent.onmouseover = function() {
+            clearInterval(_this.timer);
+        };
+
+        oParent.onmouseout = function() {
+            _this.autoPlay();
+        };
+
+        return this;
+
+    };
+
+    //面向对象方式----------------------------------
+
+    var oDiv1 = document.getElementById('tab1');
+    var oDiv2 = document.getElementById('tab2');
+
+    var tab1 = new Tab(oDiv1);
+    var tab2 = new Tab(oDiv2);
+
+    tab1.init().autoPlay();
+
+    tab2.autoPlay().init();
+
+};</script>
+</body>
+</html>
