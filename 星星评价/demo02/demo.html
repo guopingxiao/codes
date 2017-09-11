@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .main{
+            width:600px;
+            margin:0 auto;
+            position: relative;
+        }
+        .demo{
+
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="demo">
+        <h3>默认的不可操作的</h3>
+        <div id="raty1"></div>
+    </div>
+    <div class="demo">
+        <h3>可操作的</h3>
+        <div id="raty2"></div>
+    </div>
+</div>
+
+<script src="js/jquery-1.12.3.js"></script>
+<script src="js/jquery.star.raty.js"></script>
+<script>
+//     starRaty({
+//         selector:'#raty1',
+//         score:'5',
+//         star:{
+// //          type:'img'
+//         },
+//         operable:false,
+
+//     });
+   starRaty({
+       selector:'#raty2',
+       score:'5',
+       operable:true
+   });
+
+</script>
+</body>
+</html>

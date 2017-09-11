@@ -1,0 +1,29 @@
+.wyh-rate {
+    float:left;
+}
+
+.wyh-rate-title {
+
+}
+
+.wyh-rate-starPanel {
+    float:left;
+}
+
+.wyh-rate-star {
+    float:left;
+    margin: 5px;
+    background-image: url(star.png);
+    background-size: contain;
+    cursor: pointer;
+}
+.wyh-rate-star-on {
+    background-image: url(star2.png) !important;
+}
+
+.wyh-rate-valueInfo {
+    float:left;
+    width:100%;
+    font-size: 12px;
+    color:#f5994e;
+}

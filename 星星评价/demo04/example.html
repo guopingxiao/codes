@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>jQuery五星评分插件</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="jquery.star.css" rel="stylesheet">
+<style type="text/css">
+    button{width: 100px;height: 40px;line-height: 40px;}
+</style>
+</head>
+<body>
+    <div style="padding: 150px; text-align: center;">
+        <h1>jQuery五星评分插件</h1>
+        <div class="jquery-star1"></div>
+        <div class="jquery-star2"></div>
+        <div class="jquery-star3"></div>
+    </div>
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.star.js"></script>
+    <script type="text/javascript">
+        $('.jquery-star1').star({
+            //number : 5, 默认5星
+            onSelect:function(index, offEvt){
+                console.log(this);
+                console.log(index);
+            }
+        });
+
+        $('.jquery-star2').star({
+            number : 10,
+            onSelect:function(index, offEvt){
+                console.log(this);
+                console.log(index);
+                offEvt(); //取消事件
+            }
+        });
+
+        $('.jquery-star3').star({
+            //number : 5, 默认5星
+            score : 1,
+            onSelect:function(index, offEvt){
+                console.log(this);
+                console.log(index);
+            }
+        });
+    </script>
+</body>
+</html>
